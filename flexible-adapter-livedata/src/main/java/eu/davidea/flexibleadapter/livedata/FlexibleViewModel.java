@@ -51,7 +51,7 @@ public abstract class FlexibleViewModel<Source, AdapterItem, Identifier> extends
         liveItems = Transformations.switchMap(identifier, new Function<Identifier, LiveData<List<AdapterItem>>>() {
             @Override
             public LiveData<List<AdapterItem>> apply(Identifier input) {
-                return Transformations.map(getSource(input), new Function<Source, List<AdapterItem>>() {
+                /*return Transformations.map(getSource(input), new Function<Source, List<AdapterItem>>() {
                     @Override
                     public List<AdapterItem> apply(Source source) {
                         if (isSourceValid(source)) {
@@ -60,6 +60,10 @@ public abstract class FlexibleViewModel<Source, AdapterItem, Identifier> extends
                             return liveItems.getValue();
                         }
                     }
+                });*/
+                return Transformations.map(getSource(input), source -> {
+
+                    return liveItems.getValue();
                 });
             }
         });

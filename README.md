@@ -65,7 +65,7 @@ dependencies {
     // Using JCenter
     implementation 'eu.davidea:flexible-adapter:5.1.0'
     implementation 'eu.davidea:flexible-adapter-ui:1.0.0'
-    implementation 'eu.davidea:flexible-adapter-livedata:1.0.0-b3'
+    //implementation 'eu.davidea:flexible-adapter-livedata:1.0.0-b3'
     // From 1.0.0-b3, library is compiled with data binding v2
     implementation 'eu.davidea:flexible-adapter-databinding:1.0.0'
 }

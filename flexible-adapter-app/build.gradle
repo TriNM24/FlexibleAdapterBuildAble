@@ -63,7 +63,6 @@ dependencies {
     // FlexibleAdapter + extensions
     implementation project(':flexible-adapter')
     implementation project(':flexible-adapter-ui')
-    implementation project(':flexible-adapter-databinding')
 
     // AndroidX Libraries
     implementation androidx.appCompat

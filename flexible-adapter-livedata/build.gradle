@@ -17,15 +17,15 @@ ext {
     libraryLabels = ['android', 'flexibleadapter', 'adapter', 'livedata', 'lifecycle', 'viewmodel', 'androidarch']
 
     publishedGroupId = "eu.davidea"
-    bintrayName = "flexible-adapter-livedata"
+    //bintrayName = "flexible-adapter-livedata"
     artifact = bintrayName
 }
 
 android {
-    compileSdkVersion targetSdk
+    compileSdk targetSdk
 
     defaultConfig {
-        minSdkVersion minSdk
+        minSdkVersion 14
         targetSdkVersion targetSdk
         versionCode versioning.code
         versionName versioning.name
@@ -51,7 +51,8 @@ android {
 dependencies {
     // Lifecycle
     implementation androidx.lifecycleExtensions
-
+    implementation 'androidx.arch.core:core-common:2.2.0'
+    implementation 'androidx.lifecycle:lifecycle-livedata:2.8.7'
     // Test libraries
     androidTestImplementation androidx.annotation
     androidTestImplementation 'androidx.test:runner:1.3.0'

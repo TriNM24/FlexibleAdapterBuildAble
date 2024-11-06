@@ -23,10 +23,10 @@ ext {
 }
 
 android {
-    compileSdkVersion targetSdk
+    compileSdk targetSdk
 
     defaultConfig {
-        minSdkVersion minSdk
+        minSdkVersion 14
         targetSdkVersion targetSdk
         versionCode versioning.code
         versionName versioning.name
