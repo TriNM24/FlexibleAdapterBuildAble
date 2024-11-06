@@ -19,7 +19,6 @@ import eu.davidea.flexibleadapter.FlexibleAdapter;
 import eu.davidea.flexibleadapter.SelectableAdapter.Mode;
 import eu.davidea.flexibleadapter.common.FlexibleItemAnimator;
 import eu.davidea.flexibleadapter.items.AbstractFlexibleItem;
-import eu.davidea.flipview.FlipView;
 import eu.davidea.samples.flexibleadapter.ExampleAdapter;
 import eu.davidea.samples.flexibleadapter.R;
 import eu.davidea.samples.flexibleadapter.animators.FadeInDownItemAnimator;
@@ -69,7 +68,6 @@ public class FragmentAnimators extends AbstractFragment {
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
         // Settings for FlipView
-        FlipView.resetLayoutAnimationDelay(true, 1000L);
 
         // Create New Database and Initialize RecyclerView
         if (savedInstanceState == null) {
@@ -81,7 +79,6 @@ public class FragmentAnimators extends AbstractFragment {
         initializeFab();
 
         // Settings for FlipView
-        FlipView.stopLayoutAnimation();
     }
 
     @SuppressWarnings({"ConstantConditions", "NullableProblems"})

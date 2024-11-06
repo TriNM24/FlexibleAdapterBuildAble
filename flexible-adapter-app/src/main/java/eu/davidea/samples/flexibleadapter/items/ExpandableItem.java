@@ -25,7 +25,7 @@ import eu.davidea.flexibleadapter.items.IFlexible;
 import eu.davidea.flexibleadapter.items.ISectionable;
 import eu.davidea.flexibleadapter.utils.DrawableUtils;
 import eu.davidea.flexibleadapter.utils.FlexibleUtils;
-import eu.davidea.flipview.FlipView;
+//import eu.davidea.flipview.FlipView;
 import eu.davidea.samples.flexibleadapter.R;
 import eu.davidea.viewholders.ExpandableViewHolder;
 
@@ -156,10 +156,10 @@ public class ExpandableItem extends AbstractItem<ExpandableItem.ParentViewHolder
             // Select ALL and Deselect ALL
             if (adapter.isSelectAll() || adapter.isLastItemInActionMode()) {
                 // Consume the Animation
-                holder.mFlipView.flip(adapter.isSelected(position), 200L);
+                //holder.mFlipView.flip(adapter.isSelected(position), 200L);
             } else {
                 // Display the current flip status
-                holder.mFlipView.flipSilently(adapter.isSelected(position));
+                //holder.mFlipView.flipSilently(adapter.isSelected(position));
             }
 
             // In case of searchText matches with Title or with a field this will be highlighted
@@ -185,7 +185,7 @@ public class ExpandableItem extends AbstractItem<ExpandableItem.ParentViewHolder
      */
     static final class ParentViewHolder extends ExpandableViewHolder {
 
-        FlipView mFlipView;
+        //FlipView mFlipView;
         TextView mTitle;
         TextView mSubtitle;
         ImageView mHandleView;
@@ -201,7 +201,7 @@ public class ExpandableItem extends AbstractItem<ExpandableItem.ParentViewHolder
             this.mContext = view.getContext();
             this.mTitle = view.findViewById(R.id.title);
             this.mSubtitle = view.findViewById(R.id.subtitle);
-            this.mFlipView = view.findViewById(R.id.image);
+            /*this.mFlipView = view.findViewById(R.id.image);
             this.mFlipView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
@@ -211,7 +211,7 @@ public class ExpandableItem extends AbstractItem<ExpandableItem.ParentViewHolder
                         toggleActivation();
                     }
                 }
-            });
+            });*/
             this.mHandleView = view.findViewById(R.id.row_handle);
             setDragHandleView(mHandleView);
 
@@ -234,7 +234,7 @@ public class ExpandableItem extends AbstractItem<ExpandableItem.ParentViewHolder
         public void toggleActivation() {
             super.toggleActivation();
             // Here we use a custom Animation inside the ItemView
-            mFlipView.flip(mAdapter.isSelected(getAdapterPosition()));
+            //mFlipView.flip(mAdapter.isSelected(getAdapterPosition()));
         }
 
         @Override

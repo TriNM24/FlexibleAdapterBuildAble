@@ -20,7 +20,7 @@ import eu.davidea.fastscroller.FastScroller;
 import eu.davidea.flexibleadapter.FlexibleAdapter;
 import eu.davidea.flexibleadapter.common.SmoothScrollLinearLayoutManager;
 import eu.davidea.flexibleadapter.items.IFlexible;
-import eu.davidea.flipview.FlipView;
+//import eu.davidea.flipview.FlipView;
 import eu.davidea.samples.flexibleadapter.R;
 import eu.davidea.samples.flexibleadapter.items.HeaderItem;
 import eu.davidea.samples.flexibleadapter.services.DatabaseConfiguration;
@@ -78,13 +78,13 @@ public class FragmentViewPager extends Fragment {
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
         // Settings for FlipView
-        FlipView.resetLayoutAnimationDelay(true, 1000L);
+        //FlipView.resetLayoutAnimationDelay(true, 1000L);
 
         // Initialize RecyclerView
         initializeRecyclerView();
 
         // Settings for FlipView
-        FlipView.stopLayoutAnimation();
+        //FlipView.stopLayoutAnimation();
     }
 
     @Override

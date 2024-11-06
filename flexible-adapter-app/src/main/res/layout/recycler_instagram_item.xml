@@ -20,7 +20,7 @@
 		android:layout_margin="@dimen/margin_small"
 		android:orientation="horizontal">
 
-		<eu.davidea.flipview.FlipView
+		<!--<eu.davidea.flipview.FlipView
 			android:id="@+id/instagram_image_like"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
@@ -37,7 +37,7 @@
 			app:rearBackgroundColor="@android:color/transparent"
 			app:rearImage="@drawable/ic_favorite_red700_24dp"
 			app:rearImageAnimationDelay="100"
-			app:rearImageAnimationDuration="200"/>
+			app:rearImageAnimationDuration="200"/>-->
 
 		<ImageView
 			android:id="@+id/instagram_image_comment"

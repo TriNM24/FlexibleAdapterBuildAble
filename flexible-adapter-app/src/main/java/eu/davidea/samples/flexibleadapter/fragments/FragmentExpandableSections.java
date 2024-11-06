@@ -15,7 +15,7 @@ import eu.davidea.flexibleadapter.common.FlexibleItemDecoration;
 import eu.davidea.flexibleadapter.common.SmoothScrollGridLayoutManager;
 import eu.davidea.flexibleadapter.helpers.EmptyViewHelper;
 import eu.davidea.flexibleadapter.utils.Log;
-import eu.davidea.flipview.FlipView;
+//import eu.davidea.flipview.FlipView;
 import eu.davidea.samples.flexibleadapter.ExampleAdapter;
 import eu.davidea.samples.flexibleadapter.MainActivity;
 import eu.davidea.samples.flexibleadapter.R;
@@ -50,7 +50,7 @@ public class FragmentExpandableSections extends AbstractFragment {
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
         // Settings for FlipView
-        FlipView.resetLayoutAnimationDelay(true, 1000L);
+        //FlipView.resetLayoutAnimationDelay(true, 1000L);
 
         // Create New Database and Initialize RecyclerView
         if (savedInstanceState == null) {
@@ -60,7 +60,7 @@ public class FragmentExpandableSections extends AbstractFragment {
         initializeFab();
 
         // Settings for FlipView
-        FlipView.stopLayoutAnimation();
+        //FlipView.stopLayoutAnimation();
     }
 
     @SuppressWarnings({"ConstantConditions", "NullableProblems"})

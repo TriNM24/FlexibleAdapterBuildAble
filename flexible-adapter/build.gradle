@@ -7,7 +7,7 @@ versioning {
     minor 1
     patch 0
     //preRelease = 'SNAPSHOT'
-    dependsOn 'install'
+    //dependsOn 'install'
 }
 // For maven repository
 version = versioning.name

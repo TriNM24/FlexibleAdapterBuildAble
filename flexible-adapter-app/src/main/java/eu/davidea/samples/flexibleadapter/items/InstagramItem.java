@@ -13,7 +13,7 @@ import java.util.Random;
 
 import eu.davidea.flexibleadapter.FlexibleAdapter;
 import eu.davidea.flexibleadapter.items.AbstractSectionableItem;
-import eu.davidea.flipview.FlipView;
+//import eu.davidea.flipview.FlipView;
 import eu.davidea.samples.flexibleadapter.R;
 import eu.davidea.viewholders.FlexibleViewHolder;
 
@@ -79,7 +79,7 @@ public class InstagramItem extends AbstractSectionableItem<InstagramItem.ViewHol
         Context context = holder.itemView.getContext();
 
         holder.mQuantityLikes.setText(context.getResources().getString(R.string.likes, getLikes()));
-        holder.mImageFavourite.flipSilently(getStarred());
+        //holder.mImageFavourite.flipSilently(getStarred());
 
         // Load image via Glide
         RequestOptions options = new RequestOptions()
@@ -95,7 +95,7 @@ public class InstagramItem extends AbstractSectionableItem<InstagramItem.ViewHol
     static final class ViewHolder extends FlexibleViewHolder {
 
         ImageView mImage;
-        FlipView mImageFavourite;
+        //FlipView mImageFavourite;
         ImageView mImageComment;
         ImageView mImageShare;
         TextView mQuantityLikes;
@@ -103,7 +103,7 @@ public class InstagramItem extends AbstractSectionableItem<InstagramItem.ViewHol
         public ViewHolder(View view, FlexibleAdapter adapter) {
             super(view, adapter);
             this.mImage = view.findViewById(R.id.instagram_image);
-            this.mImageFavourite = view.findViewById(R.id.instagram_image_like);
+            //this.mImageFavourite = view.findViewById(R.id.instagram_image_like);
             this.mImageComment = view.findViewById(R.id.instagram_image_comment);
             this.mImageShare = view.findViewById(R.id.instagram_image_share);
             this.mQuantityLikes = view.findViewById(R.id.instagram_quantity_likes);

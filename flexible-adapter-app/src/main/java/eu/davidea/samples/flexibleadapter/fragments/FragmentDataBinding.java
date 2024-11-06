@@ -17,7 +17,7 @@ import eu.davidea.flexibleadapter.SelectableAdapter.Mode;
 import eu.davidea.flexibleadapter.databinding.BindingFlexibleAdapter;
 import eu.davidea.flexibleadapter.helpers.EmptyViewHelper;
 import eu.davidea.flexibleadapter.items.AbstractFlexibleItem;
-import eu.davidea.flipview.FlipView;
+//import eu.davidea.flipview.FlipView;
 import eu.davidea.samples.flexibleadapter.R;
 import eu.davidea.samples.flexibleadapter.animators.GarageDoorItemAnimator;
 import eu.davidea.samples.flexibleadapter.items.AbstractItem;
@@ -71,7 +71,7 @@ public class FragmentDataBinding extends AbstractFragment {
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
         //Settings for FlipView
-        FlipView.resetLayoutAnimationDelay(true, 1000L);
+        //FlipView.resetLayoutAnimationDelay(true, 1000L);
 
         //Create New Database and Initialize RecyclerView
         DatabaseService.getInstance().createDataBindingDatabase(12, 4);
@@ -81,7 +81,7 @@ public class FragmentDataBinding extends AbstractFragment {
         initializeFab();
 
         //Settings for FlipView
-        FlipView.stopLayoutAnimation();
+        //FlipView.stopLayoutAnimation();
     }
 
     @SuppressWarnings({"ConstantConditions", "NullableProblems"})

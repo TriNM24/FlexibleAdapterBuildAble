@@ -125,10 +125,10 @@ public class ExpandableLevel1Item
         // ANIMATION EXAMPLE!! ImageView - Handle Flip Animation on Select ALL and Deselect ALL
         if (adapter.isSelectAll() || adapter.isLastItemInActionMode()) {
             // Consume the Animation
-            holder.mFlipView.flip(adapter.isSelected(position), 200L);
+            //holder.mFlipView.flip(adapter.isSelected(position), 200L);
         } else {
             // Display the current flip status
-            holder.mFlipView.flipSilently(adapter.isSelected(position));
+            //holder.mFlipView.flipSilently(adapter.isSelected(position));
         }
     }
 

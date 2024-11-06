@@ -15,7 +15,6 @@ import eu.davidea.flexibleadapter.SelectableAdapter.Mode;
 import eu.davidea.flexibleadapter.common.FlexibleItemDecoration;
 import eu.davidea.flexibleadapter.helpers.EmptyViewHelper;
 import eu.davidea.flexibleadapter.items.AbstractFlexibleItem;
-import eu.davidea.flipview.FlipView;
 import eu.davidea.samples.flexibleadapter.MainActivity;
 import eu.davidea.samples.flexibleadapter.R;
 import eu.davidea.samples.flexibleadapter.services.DatabaseConfiguration;
@@ -102,7 +101,7 @@ public class FragmentAsyncFilter extends AbstractFragment {
 
     private void initializeRecyclerView() {
         // Settings for FlipView
-        FlipView.resetLayoutAnimationDelay(true, 1000L);
+        //FlipView.resetLayoutAnimationDelay(true, 1000L);
 
         // Size limit = MAX_VALUE will always animate the changes
         mAdapter.setAnimateChangesWithDiffUtil(DatabaseConfiguration.animateWithDiffUtil)
@@ -153,7 +152,7 @@ public class FragmentAsyncFilter extends AbstractFragment {
                 (EmptyViewHelper.OnEmptyViewListener) getActivity()); // Optional!!
 
         // Settings for FlipView
-        FlipView.stopLayoutAnimation();
+        //FlipView.stopLayoutAnimation();
         showFab(1200L);
     }
 

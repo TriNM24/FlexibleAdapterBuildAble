@@ -23,7 +23,7 @@ import eu.davidea.flexibleadapter.items.IFlexible;
 import eu.davidea.flexibleadapter.items.ISectionable;
 import eu.davidea.flexibleadapter.utils.DrawableUtils;
 import eu.davidea.flexibleadapter.utils.FlexibleUtils;
-import eu.davidea.flipview.FlipView;
+//import eu.davidea.flipview.FlipView;
 import eu.davidea.samples.flexibleadapter.R;
 import eu.davidea.viewholders.FlexibleViewHolder;
 
@@ -90,7 +90,7 @@ public class SimpleItem extends AbstractItem<SimpleItem.SimpleViewHolder>
         }
 
         // Display the current flip status
-        holder.mFlipView.flipSilently(adapter.isSelected(position));
+        //holder.mFlipView.flipSilently(adapter.isSelected(position));
 
         // In case of any Words in the searchText matches with Title this will be highlighted
         if (adapter.hasFilter()) {
@@ -115,7 +115,7 @@ public class SimpleItem extends AbstractItem<SimpleItem.SimpleViewHolder>
 
     static final class SimpleViewHolder extends FlexibleViewHolder {
 
-        FlipView mFlipView;
+        //FlipView mFlipView;
         TextView mTitle;
         TextView mSubtitle;
         ImageView mHandleView;
@@ -131,8 +131,8 @@ public class SimpleItem extends AbstractItem<SimpleItem.SimpleViewHolder>
             this.mContext = view.getContext();
             this.mTitle = view.findViewById(R.id.title);
             this.mSubtitle = view.findViewById(R.id.subtitle);
-            this.mFlipView = view.findViewById(R.id.image);
-            this.mFlipView.setOnClickListener(new View.OnClickListener() {
+            //this.mFlipView = view.findViewById(R.id.image);
+            /*this.mFlipView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     if (mAdapter.mItemLongClickListener != null) {
@@ -141,7 +141,7 @@ public class SimpleItem extends AbstractItem<SimpleItem.SimpleViewHolder>
                         toggleActivation();
                     }
                 }
-            });
+            });*/
             this.mHandleView = view.findViewById(R.id.row_handle);
             setDragHandleView(mHandleView);
 
@@ -176,7 +176,7 @@ public class SimpleItem extends AbstractItem<SimpleItem.SimpleViewHolder>
         public void toggleActivation() {
             super.toggleActivation();
             // Here we use a custom Animation inside the ItemView
-            mFlipView.flip(mAdapter.isSelected(getAdapterPosition()));
+            //mFlipView.flip(mAdapter.isSelected(getAdapterPosition()));
         }
 
         @Override

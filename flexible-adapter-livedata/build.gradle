@@ -1,5 +1,5 @@
 apply plugin: 'com.android.library'
-apply plugin: 'de.mannodermaus.android-junit5'
+//apply plugin: 'de.mannodermaus.android-junit5'
 apply plugin: 'eu.davidea.grabver'
 
 versioning {
@@ -42,9 +42,9 @@ android {
     }
     testOptions {
         /* Android-junit5 - https://github.com/mannodermaus/android-junit5/wiki/Migrating-from-1.0.x */
-        junitPlatform {
+        /*junitPlatform {
            // options
-        }
+        }*/
     }
 }
 
